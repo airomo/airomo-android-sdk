@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+	<FrameLayout
+	    android:id="@android:id/icon" 
+	    android:layout_width="wrap_content"
+    	android:layout_height="match_parent"
+    	android:layout_alignParentLeft="true"
+    	android:background="@color/airm_dialog_info_sign">
+
+		<ProgressBar
+		    android:id="@android:id/progress"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="@dimen/airm_control_margin_horizontal"
+		    android:layout_gravity="center" />
+	    
+    </FrameLayout>
+	
+	<TextView 
+	    android:id="@android:id/text1"
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_toRightOf="@android:id/icon"
+    	android:layout_marginLeft="@dimen/airm_control_margin_horizontal"
+    	style="@style/airm_dialog_text"
+	    />
+    
+</RelativeLayout>

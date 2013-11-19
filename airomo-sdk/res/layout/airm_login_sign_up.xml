@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:padding="@dimen/airm_panel_padding">
+
+    <ImageView
+        android:id="@+id/airm_iconCurl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/airm_descr_curl_icon"
+        android:layout_marginTop="@dimen/airm_control_margin_vertical"
+        android:src="@drawable/airm_blue_curl" />
+
+    <EditText
+        android:id="@+id/airm_editFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/airm_iconCurl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/airm_control_margin_vertical"
+        android:ems="11"
+        android:hint="@string/airm_hint_edit_fullname" 
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName">
+       
+        <requestFocus />
+    </EditText>    
+    
+    <EditText
+        android:id="@+id/airm_editLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/airm_editFullName"
+        android:layout_marginTop="@dimen/airm_control_margin_vertical"
+        android:layout_alignLeft="@+id/airm_editFullName"
+        android:layout_alignRight="@+id/airm_editFullName"
+        android:hint="@string/airm_hint_edit_login_signup" 
+        android:imeOptions="actionNext"
+        android:inputType="text|textPersonName">
+    </EditText>
+
+    <EditText
+        android:id="@+id/airm_editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/airm_editLogin"
+        android:layout_marginTop="@dimen/airm_control_margin_vertical"
+        android:layout_alignLeft="@+id/airm_editFullName"
+        android:layout_alignRight="@+id/airm_editFullName"
+        android:hint="@string/airm_hint_edit_login" 
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress">
+    </EditText>
+    
+    <EditText
+        android:id="@+id/airm_editPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/airm_editLogin"
+        android:layout_alignRight="@+id/airm_editLogin"
+        android:layout_below="@+id/airm_editEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/airm_control_margin_vertical"
+        android:hint="@string/airm_login_password"
+        android:imeOptions="actionGo"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <Button
+        android:id="@+id/airm_btnSignup"
+        style="@style/airm_btn_cyan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/airm_editLogin"
+        android:layout_alignRight="@+id/airm_editLogin"
+        android:layout_below="@+id/airm_editPassword"
+        android:layout_marginTop="@dimen/airm_control_margin_vertical_double"
+        android:onClick="onSignUpPressed"
+        android:text="@string/airm_btn_signup" />
+
+    <RelativeLayout
+        android:id="@+id/airm_layoutOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/airm_btnSignup"
+        android:layout_marginTop="@dimen/airm_control_margin_vertical"
+        android:layout_alignLeft="@+id/airm_editLogin"
+        android:layout_alignRight="@+id/airm_editLogin">
+        
+        <FrameLayout 
+            android:layout_width="match_parent" 
+            android:layout_height="@dimen/airm_divider_widh_thin" 
+            android:background="@color/airm_divider"
+            android:layout_toLeftOf="@+id/airm_labelOr"
+            android:layout_centerVertical="true"	            
+            />
+        <TextView 
+	        android:id="@+id/airm_labelOr"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/airm_label_or"
+	        android:layout_marginLeft="@dimen/airm_control_margin_horizontal"
+	        android:layout_marginRight="@dimen/airm_control_margin_horizontal"
+	        android:textColor="@color/airm_divider"
+            />
+        <FrameLayout 
+            android:layout_width="match_parent" 
+            android:layout_height="@dimen/airm_divider_widh_thin" 
+            android:background="@color/airm_divider" 
+            android:layout_toRightOf="@+id/airm_labelOr"
+            android:layout_centerVertical="true"
+             />
+        	        
+    </RelativeLayout>
+    
+
+    <LinearLayout
+        android:id="@+id/airm_layoutThirdParty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/airm_layoutOr"
+        android:layout_marginTop="@dimen/airm_control_margin_vertical"
+        android:layout_alignLeft="@+id/airm_editLogin"
+        android:layout_alignRight="@+id/airm_editLogin"
+        android:orientation="horizontal">
+        
+	    <Button
+	        android:id="@+id/airm_btnLoginFacebook"
+	        style="@style/airm_btn_blue"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="@dimen/airm_control_margin_horizontal"
+	        android:layout_weight="1"
+	        android:onClick="onFacebookPressed"
+	        android:text="@string/airm_btn_login_facebook" />
+        
+	    <Button
+	        android:id="@+id/airm_btnLoginGoogle"
+	        style="@style/airm_btn_red"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="@dimen/airm_control_margin_horizontal"
+	        android:layout_weight="1"
+	        android:onClick="onGooglePressed"
+	        android:text="@string/airm_btn_login_google" />
+	    
+    </LinearLayout>
+    
+</RelativeLayout>

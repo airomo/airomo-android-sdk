@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="airm_app_name">Appcurl from Airomo Inc.</string>
+    
+    <string name="airm_error_server_general">General server error</string>
+    <string name="airm_error_no_internet_connection">No connection. Please check your WiFi/3G connection.</string>
+    <string name="airm_error_server_timed_out">Error server timed out</string>
+    <string name="airm_error_server_unknown">Unknown server error</string>
+    <string name="airm_error_invalid_login">User login or password is invalid</string>
+    <string name="airm_error_invalid_resource">Invalid remote resource requested</string>
+    <string name="airm_error_string_too_short">Entered value is too short. Please add more characters</string>
+    <string name="airm_error_string_too_short_login">Entered user name is too short. It should be 5 or more characters.</string>
+    <string name="airm_error_string_too_short_password">Entered password is too short. It should be 5 or more characters.</string>
+    <string name="airm_error_signup_failed">New user signup failed. Try another name.</string>
+    <string name="airm_error_file_conflict">Duplicate record or file conflict. Try another name.</string>
+    <string name="airm_error_file_download">Error downloading file</string>
+    <string name="airm_error_not_found">File or data not found on server</string>
+    <string name="airm_error_login_conflict">Login, email or facebook login already used by someone else.</string>
+    <string name="airm_error_enter_email_and_pass">Please enter email and Airomo password to link your Facebook account.</string>
+    <string name="airm_error_no_address_info">Address information for your location is not available. Please enter it manually.</string>
+    <string name="airm_error_item_already_liked">Unable to like. You already liked this item.</string>
+	<string name="airm_error_item_did_not_liked">Unable to unlike. You never liked this item.</string>
+	<string name="airm_error_item_recently_shared">Unable to share. You already shared this item less than 5 minues ago. Try again later</string>
+	<string name="airm_error_item_did_not_shared">Unable to unshare. You never shared this item.</string>
+	<string name="airm_error_not_bound_to_service">Unable to unshare. You never shared this item.</string>
+	
+    <string name="airm_ios_name">iOS</string>
+    <string name="airm_android_name">Android</string>
+    <string name="airm_unknown_name">Unknown</string>
+
+    <string name="airm_descr_curl_icon">Appcurl logo</string>
+    <string name="airm_btn_sign_up">Sign up</string>
+    <string name="airm_label_or">or</string>
+    <string name="airm_btn_sign_in">Sign in</string>
+    <string name="airm_btn_why_sign_up">why signup?</string>
+    <string name="airm_hint_edit_login">Username or email</string>
+    <string name="airm_login_password">Your password</string>
+    <string name="airm_btn_login">Sign me in</string>
+    <string name="airm_btn_forgot_password">Forgot Password?</string>
+    <string name="airm_btn_login_facebook">Facebook</string>
+    <string name="airm_btn_login_google">Google</string>
+
+    <string name="airm_btn_signup">Sign me up</string>
+    <string name="airm_hint_edit_fullname">Full Name</string>
+    <string name="airm_hint_edit_login_signup">Pick a cool username</string>
+    <string name="airm_hint_edit_email_signup">Email for password recovery</string>
+
+    <string name="airm_btn_send_password">Send my Password</string>
+    <string name="airm_hint_edit_email">Email</string>
+    
+    <string name="airm_error_enter_valid_fullname">Please enter valid full name from at least two words</string>
+    <string name="airm_error_enter_valid_login">Please enter valid login at least 5 characters length</string>
+    <string name="airm_error_enter_valid_email">Please enter valid Email address</string>
+    <string name="airm_error_enter_valid_password">Please enter valid password at least 5 characters length</string>
+    
+    <string name="airm_signing_in">Signing in&#8230;</string>
+    <string name="airm_signing_up">Signing up&#8230;</string>
+    
+    <string name="airm_title_signin">Existing users</string>
+    <string name="airm_title_signup">New User Registration</string>
+    <string name="airm_label_enable_app_login">Are you sure you want to enable the following application to access your Airomo account?</string>
+    <string name="airm_label_app_name">Application:</string>
+    <string name="airm_label_app_date">Created:</string>
+    <string name="airm_btn_enable">Enable</string>
+    <string name="airm_btn_disable">Disable</string>
+    		
+	<string name="airm_market_default">Unknown</string>    
+	<string name="airm_market_itunes">iTunes</string>    
+	<string name="airm_market_google_play">Google Play</string>    
+	<string name="airm_market_amazon">Amazon Store</string>    
+    <string name="airm_market_nook">Barnes&amp;Noble</string>
+    
+    
+    
+</resources>

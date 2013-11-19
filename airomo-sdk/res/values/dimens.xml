@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="airm_panel_padding">7dp</dimen>
+    <dimen name="airm_panel_margin">10dp</dimen>
+    <dimen name="airm_control_margin_vertical">10dp</dimen>
+    <dimen name="airm_control_margin_vertical_double">18dp</dimen>
+    <dimen name="airm_control_margin_horizontal">5dp</dimen>
+    <dimen name="airm_btn_padding_horizontal">20dp</dimen>
+    <dimen name="airm_btn_padding_vertical">5dp</dimen>
+    <dimen name="airm_divider_widh_thin">1dp</dimen>
+    <dimen name="airm_btn_width_wide">200dp</dimen>
+    <dimen name="airm_dialog_sign_width">25dp</dimen>
+    	    
+</resources>

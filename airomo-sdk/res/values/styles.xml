@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="airm_AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="airm_AppTheme" parent="airm_AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+	<style name="airm_btn_cyan" parent="@android:style/Widget.Button">
+	    <item name="android:textColor">@color/airm_btn_cyan_text</item>
+	    <!-- item name="android:textAppearance">@android:attr/textAppearanceMedium</item -->
+	    <item name="android:background">@drawable/airm_btn_cyan_bg</item>	    
+	</style>
+
+	<style name="airm_btn_blue" parent="@android:style/Widget.Button">
+	    <item name="android:textColor">@color/airm_btn_cyan_text</item>
+	    <!-- item name="android:textAppearance">@android:attr/textAppearanceMedium</item -->	    
+	    <item name="android:background">@drawable/airm_btn_blue_bg</item>	    
+	</style>
+
+	<style name="airm_btn_red" parent="@android:style/Widget.Button">
+	    <item name="android:textColor">@color/airm_btn_red_text</item>
+	    <!-- item name="android:textAppearance">@android:attr/textAppearanceMedium</item -->	    
+	    <item name="android:background">@drawable/airm_btn_red_bg</item>	    
+	</style>
+
+	<style name="airm_btn_orange" parent="@android:style/Widget.Button">
+	    <item name="android:textColor">@color/airm_btn_orange_text</item>
+	    <!-- item name="android:textAppearance">@android:attr/textAppearanceMedium</item -->	    
+	    <item name="android:background">@drawable/airm_btn_orange_bg</item>	    
+	</style>
+				
+	<style name="airm_btn_link" parent="@android:style/Widget.Button.Small">
+	    <item name="android:textColor">@color/airm_btn_link_text</item>
+		<!-- item name="android:textAppearance">@android:attr/textAppearanceMedium</item -->	    
+	    <item name="android:background">@android:color/transparent</item>	    
+	</style>
+
+	<style name="airm_dialog_text" parent="@android:style/Widget.TextView">
+		<!-- item name="android:textAppearance">@android:attr/textAppearanceMedium</item -->	    
+	</style>
+							    
+</resources>

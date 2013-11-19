@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+	<FrameLayout
+	    android:id="@android:id/icon" 
+	    android:layout_width="@dimen/airm_dialog_sign_width"
+    	android:layout_height="match_parent"
+    	android:layout_alignParentLeft="true"
+    	android:background="@color/airm_dialog_error_sign"/>
+	
+	<TextView 
+	    android:id="@android:id/text1"
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_toRightOf="@android:id/icon"
+    	android:layout_marginLeft="@dimen/airm_control_margin_horizontal"
+    	style="@style/airm_dialog_text"
+	    />
+    
+</RelativeLayout>

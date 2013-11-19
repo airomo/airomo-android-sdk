@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        
+    <color name="airm_btn_cyan_norm">#ff00afd1</color>
+    <color name="airm_btn_cyan_press">#ff95eafb</color>
+    <color name="airm_btn_cyan_sel">#fff4b02d</color>
+    <color name="airm_btn_cyan_dis">#ff97a6a9</color>
+    <color name="airm_btn_cyan_text">@android:color/white</color>
+    
+    <color name="airm_btn_blue_norm">#ff3a80e4</color>
+    <color name="airm_btn_blue_press">#ffaec3e1</color>
+    <color name="airm_btn_blue_sel">#fff4b02d</color>
+    <color name="airm_btn_blue_dis">#ffa1a7af</color>
+    <color name="airm_btn_blue_text">@android:color/white</color>
+
+    <color name="airm_btn_red_norm">#ffe24f43</color>
+    <color name="airm_btn_red_press">#ffe1a8a3</color>
+    <color name="airm_btn_red_sel">#ffdfb06d</color>
+    <color name="airm_btn_red_dis">#ff8b6f6c</color>
+    <color name="airm_btn_red_text">@android:color/white</color>
+
+    <color name="airm_btn_orange_norm">#fffb9c62</color>
+    <color name="airm_btn_orange_press">#fffbd4bc</color>
+    <color name="airm_btn_orange_sel">#fff8b32f</color>
+    <color name="airm_btn_orange_dis">#ffb3a59d</color>
+    <color name="airm_btn_orange_text">@android:color/white</color>
+           
+    <color name="airm_btn_link_text">#ffd7d6d6</color>
+            
+    <color name="airm_divider">#ff9d9da0</color>
+    
+    <color name="airm_dialog_error_sign">#ffe24f43</color>
+    <color name="airm_dialog_info_sign">#ff3a80e4</color>
+    
+</resources>

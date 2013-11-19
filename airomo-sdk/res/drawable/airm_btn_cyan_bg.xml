@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_focused="true" android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/airm_btn_cyan_sel"/>
+            <padding android:left="@dimen/airm_btn_padding_horizontal" android:right="@dimen/airm_btn_padding_horizontal"
+                android:top="@dimen/airm_btn_padding_vertical" android:bottom="@dimen/airm_btn_padding_vertical"/>
+        </shape>        
+    </item>
+    <item android:state_focused="true" android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/airm_btn_cyan_press"/>
+            <padding android:left="@dimen/airm_btn_padding_horizontal" android:right="@dimen/airm_btn_padding_horizontal"
+                android:top="@dimen/airm_btn_padding_vertical" android:bottom="@dimen/airm_btn_padding_vertical"/>
+        </shape>        
+    </item>
+    <item android:state_focused="false" android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/airm_btn_cyan_press"/>
+            <padding android:left="@dimen/airm_btn_padding_horizontal" android:right="@dimen/airm_btn_padding_horizontal"
+                android:top="@dimen/airm_btn_padding_vertical" android:bottom="@dimen/airm_btn_padding_vertical"/>
+        </shape>        
+    </item>        
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/airm_btn_cyan_dis"/>
+            <padding android:left="@dimen/airm_btn_padding_horizontal" android:right="@dimen/airm_btn_padding_horizontal"
+                android:top="@dimen/airm_btn_padding_vertical" android:bottom="@dimen/airm_btn_padding_vertical"/>
+        </shape>        
+    </item>        
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/airm_btn_cyan_norm"/>
+            <padding android:left="@dimen/airm_btn_padding_horizontal" android:right="@dimen/airm_btn_padding_horizontal"
+                android:top="@dimen/airm_btn_padding_vertical" android:bottom="@dimen/airm_btn_padding_vertical"/>
+        </shape>        
+    </item>        
+</selector>

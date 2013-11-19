@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:id="@+id/airm_LayoutContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/airm_iconCurl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/airm_descr_curl_icon"
+            android:src="@drawable/airm_blue_curl" />
+        
+	    <Button
+	        android:id="@+id/airm_btnSignUp"
+	        style="@style/airm_btn_cyan"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/airm_iconCurl"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="@dimen/airm_control_margin_vertical"
+	        android:minWidth="@dimen/airm_btn_width_wide"
+	        android:onClick="onSignUpPressed"
+	        android:text="@string/airm_btn_sign_up" />
+	
+	    <RelativeLayout
+	        android:id="@+id/airm_layoutOr"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/airm_btnSignUp"
+	        android:layout_marginTop="@dimen/airm_control_margin_vertical"
+	        android:layout_alignLeft="@+id/airm_btnSignUp"
+	        android:layout_alignRight="@+id/airm_btnSignUp">
+	        
+	        <FrameLayout 
+	            android:layout_width="match_parent" 
+	            android:layout_height="@dimen/airm_divider_widh_thin" 
+	            android:background="@color/airm_divider"
+	            android:layout_toLeftOf="@+id/airm_labelOr"
+	            android:layout_centerVertical="true"	            
+	            />
+	        <TextView 
+		        android:id="@+id/airm_labelOr"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/airm_label_or"
+		        android:layout_marginLeft="@dimen/airm_control_margin_horizontal"
+		        android:layout_marginRight="@dimen/airm_control_margin_horizontal"
+		        android:textColor="@color/airm_divider"
+	            />
+	        <FrameLayout 
+	            android:layout_width="match_parent" 
+	            android:layout_height="@dimen/airm_divider_widh_thin" 
+	            android:background="@color/airm_divider" 
+	            android:layout_toRightOf="@+id/airm_labelOr"
+	            android:layout_centerVertical="true"
+	             />
+	        	        
+	    </RelativeLayout>
+        
+	    <Button
+	        android:id="@+id/airm_btnSignIn"
+	        style="@style/airm_btn_blue"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/airm_btnSignUp"
+	        android:layout_alignRight="@+id/airm_btnSignUp"
+	        android:layout_below="@+id/airm_layoutOr"
+	        android:layout_marginTop="@dimen/airm_control_margin_vertical"
+	        android:onClick="onSignInPressed"
+	        android:text="@string/airm_btn_sign_in" />
+
+	    <Button
+	        android:id="@+id/airm_btnWhySignup"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/airm_btnSignIn"
+	        android:layout_alignRight="@+id/airm_btnSignUp"
+	        android:layout_marginTop="@dimen/airm_control_margin_vertical"
+	        android:text="@string/airm_btn_why_sign_up"
+	        style="@style/airm_btn_link"
+	         />
+	    	    	    	    	    
+    </RelativeLayout>
+
+    
+</RelativeLayout>

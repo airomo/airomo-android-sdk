@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:id="@+id/airm_LayoutContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/airm_panel_padding">
+
+        <ImageView
+            android:id="@+id/airm_iconCurl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/airm_descr_curl_icon"
+            android:src="@drawable/airm_blue_curl" />
+        
+	    <TextView
+	        android:id="@+id/airm_labelEnableAppLogin"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/airm_iconCurl"
+	        android:text="@string/airm_label_enable_app_login"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <TableLayout 
+	        android:id="@+id/airm_layoutAppData"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/airm_labelEnableAppLogin"
+	        android:layout_marginTop="@dimen/airm_control_margin_vertical"
+	        android:layout_centerHorizontal="true">
+            
+            <TableRow 
+                android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content">
+	        	
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/airm_label_app_name"
+			        android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+			    <TextView
+			        android:id="@+id/airm_labelAppName"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textStyle="bold"
+			        android:textAppearance="?android:attr/textAppearanceMedium" />
+			    
+            </TableRow>
+
+            <TableRow 
+                android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content" >
+	        	
+			    <TextView
+			        android:id="@+id/airm_labelAppDescr"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textStyle="bold"
+			    	android:layout_span="2"    
+			        android:textAppearance="?android:attr/textAppearanceMedium" />
+			    
+            </TableRow>
+
+            <TableRow 
+                android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content">
+	        	
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/airm_label_app_date"
+			        android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+			    <TextView
+			        android:id="@+id/airm_labelAppDate"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textStyle="bold"
+			        android:textAppearance="?android:attr/textAppearanceMedium" />
+			    
+            </TableRow>
+            
+        </TableLayout>
+	    
+        <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"            
+	        android:layout_marginTop="@dimen/airm_control_margin_vertical"
+	        android:layout_below="@+id/airm_layoutAppData"
+	        android:orientation="horizontal">
+                            
+		    <Button
+		        android:id="@+id/airm_btnEnable"
+		        style="@style/airm_btn_blue"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:onClick="onEnableApp"
+		        android:text="@string/airm_btn_enable" 
+		        android:layout_marginRight="@dimen/airm_control_margin_horizontal"/>
+
+		    <Button
+		        android:id="@+id/airm_btnDisable"
+		        style="@style/airm_btn_red"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:onClick="onDisableApp"
+		        android:text="@string/airm_btn_disable" 
+		        android:layout_marginLeft="@dimen/airm_control_margin_horizontal"/>
+		    		    
+        </LinearLayout>
+	    	    	    	    	    	    
+    </RelativeLayout>
+
+    
+</RelativeLayout>

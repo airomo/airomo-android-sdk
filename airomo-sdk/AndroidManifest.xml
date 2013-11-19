@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.airomo.sdk"
+    android:versionCode="1"
+    android:installLocation="auto"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />	
+    
+    <application
+        android:allowBackup="true"
+        android:label="@string/airm_app_name">
+        
+		<service android:name="com.airomo.sdk.service.AiromoSDKService" 
+		    android:enabled="true" 
+		    android:label="Airomo SDK Service">
+		</service>
+            
+        <service
+            android:name="com.airomo.sdk.auth.AuthenticationService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/airm_authenticator" />
+        </service>				
+		
+		<receiver android:name="com.airomo.sdk.service.receiver.ScreenActionsReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED"/>
+			    <action android:name="android.intent.action.USER_PRESENT"/>
+			    <action android:name="android.intent.action.ACTION_SCREEN_ON"/>
+				<action android:name="android.intent.action.ACTION_SCREEN_OFF"/>
+			</intent-filter>
+		</receiver>
+
+		<receiver android:name="com.airomo.sdk.service.receiver.NetworkActivityReceiver">
+			<intent-filter>
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+				<action android:name="android.net.ConnectivityManager.CONNECTIVITY_ACTION" />
+				<action android:name="android.net.wifi.WIFI_STATE_CHANGED" />			
+			</intent-filter>
+		</receiver>
+		<activity android:name="com.airomo.sdk.login.LoginSplashActivity" android:windowSoftInputMode="adjustPan" android:launchMode="standard" android:theme="@style/airm_AppTheme" android:icon="@drawable/airm_ic_launcher" android:label="@string/airm_app_name"></activity>
+		<activity android:name="com.airomo.sdk.login.LoginOrSignUpActivity" android:windowSoftInputMode="stateVisible|adjustPan" android:label="@string/airm_title_signin" android:launchMode="standard" android:theme="@style/airm_AppTheme" android:icon="@drawable/airm_ic_launcher"></activity>
+        
+    </application>
+
+</manifest>
