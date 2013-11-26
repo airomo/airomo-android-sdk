@@ -4,6 +4,7 @@ Airomo SDK Sample applications *(airomo-sdk-android-sample)*.
 This application project contains sample code and configuration to demostrate key features of Airomo SDK library.
 
 Build instructions:
+___________________
 
 1. Make sure *airomo-sdk* and *airomo-sdk-ui* libraries are already imported and configured;
 2. Import application project into Eclipse;
@@ -11,11 +12,17 @@ Build instructions:
 4. Make sure *proguard-project.txt* contains correct *"-include"* of *airomo-sdk-ui/proguard-project.txt* file. By default it's assumed that *airomo-sdk*, *airomo-sdk-ui* and *airomo-sdk-android-sample* are in the same folder so *proguard-project.txt* contains `-include ../airomo-sdk-ui/proguard-project.txt` instruction;
 
 The following classes are included into the sample project:
+___________________________________________________________
 
 1) *com.airomo.sdk.sample.MainActivity* class which demostrates *com.airomo.sdk.ui.fragment.AppExploreGridFragment* usage for exploaring, filtering and searching applications using *Apiromo API*.
 2) *com.airomo.sdk.sample.AiromoSDKSampleApplication* which simply extends *com.airomo.sdk.ui.AiromoSDKUIApplication* to correctly initialize *Android-Universal-Image-Loader* library instance;
 3) *com.airomo.sdk.sample.DeveloperConstants* contains developer keys to access *Airomo API*;
 4) *com.airomo.sdk.sample.common.TabListener* helper class to insert tabs into the system *Action Bar*;
+
+Sample application build
+________________________
+
+Airomo SDK sample application APK build available [here](https://github.com/airomo/airomo-android-sdk/blob/master/airomo-sdk-android-sample/release/airomo-sdk-android-sample.apk).
 
 
 

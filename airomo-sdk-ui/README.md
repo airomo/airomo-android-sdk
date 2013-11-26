@@ -4,6 +4,7 @@ Airomo SDK UI for Android *(airomo-sdk-ui)*.
 This library contains Airomo exploring UI fragments to be reused in your projects.
 
 Build instructions:
+___________________
 
 1. Import into Eclipse;
 2. Right-click on *libs/airomo-sdk-ui-lib.jar* and select **"Build Path | Add to Build path"**;
@@ -19,6 +20,7 @@ Build instructions:
 *Airomo SDK UI for Android* uses *Google Android Support library* to be compatible with older versions of Android. Please make sure you have *Google Android Support* library in your project exported into the target application. 
 
 Using the library.
+__________________
 
 To insert applications exploring fragment into your UI you need to do the following:
 
@@ -54,6 +56,9 @@ To insert applications exploring fragment into your UI you need to do the follow
 4. Insert newly created fragment into your UI:
 
 		getSupportFragmentManager().beginTransaction().add(frag, R.id.explore_frag, "AIROMO_SDK_APP_EXPLORE_FRAG").commit();
+
+Notes.
+______
 
 + *AppExploreGridFragment* supports optimized screen rotation functionality and automatically changes number or columns by the screen width;
 + Images are loaded into the explore fragment by the *Android-Universal-Image-Loader* and cached on SD card. You can also use *Android-Universal-Image-Loader* library in your application. If you are don't like default settings of *Android-Universal-Image-Loader* then do not inherit from *com.airomo.sdk.ui.AiromoSDKUIApplication* and configure *Android-Universal-Image-Loader* instance in your application class;

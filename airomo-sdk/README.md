@@ -4,6 +4,7 @@ Airomo SDK for Android *(airomo-sdk)*.
 Base functionality to access Airomo backend service API.
 
 Build instructions:
+___________________
 
 1. Import into Eclipse;
 2. Right-click on *libs/airomo-sdk-lib.jar* and select **"Build Path | Add to Build path"**;
