@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<item name="airm_image_url" type="id"/>
+	<item name="airm_tag_link" type="id"/>
+	<item name="airm_tag_id" type="id"/>
+	<item name="airm_tag_selected" type="id"/>
+			  
+</resources>

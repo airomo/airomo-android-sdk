@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/airm_layoutAppFilterInfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:padding="@dimen/airm_panel_padding"
+    android:background="@color/airm_filter_info_bg">
+
+    <TextView 
+        android:id="@+id/airm_labelParam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/airm_title_app_search"
+        style="@style/airm_FilterInfo.Text"
+    />
+    
+    <TextView 
+        android:id="@android:id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/airm_FilterInfo.Text"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/airm_labelParam"
+        android:layout_toLeftOf="@+id/airm_labelTotal"
+        android:layout_alignBottom="@+id/airm_labelParam"
+        android:layout_marginLeft="@dimen/airm_panel_margin"
+        />
+
+    <TextView 
+        android:id="@+id/airm_labelTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/airm_label_total_found"
+        android:layout_alignBottom="@android:id/text2"
+        android:layout_toLeftOf="@android:id/text2"
+        style="@style/airm_FilterInfo.Text"
+        android:background="@drawable/airm_grey_frame"
+    />
+
+    <TextView 
+        android:id="@android:id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        style="@style/airm_FilterInfo.Text"
+        android:layout_alignParentRight="true"
+        android:text="@string/airm_not_aval"
+        android:background="@drawable/airm_grey_frame"
+    />
+    
+	<HorizontalScrollView 
+		android:id="@+id/airm_scrollerTags"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:scrollbars="none"
+		android:layout_below="@android:id/text1"
+		android:overScrollMode="ifContentScrolls">
+
+		<LinearLayout 
+	        android:id="@+id/airm_layoutTags"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        >
+	    		    	
+			<LinearLayout 
+		        android:id="@+id/airm_layoutTags1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:gravity="left|bottom"/>
+			<LinearLayout 
+		        android:id="@+id/airm_layoutTags2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:gravity="left|bottom"/>
+		</LinearLayout>
+   </HorizontalScrollView>
+    
+</RelativeLayout>

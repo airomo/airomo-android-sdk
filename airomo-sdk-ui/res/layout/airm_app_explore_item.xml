@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/airm_app_explore_item_width"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout 
+        android:id="@+id/airm_layoutAppDetails"
+        android:layout_width="match_parent"
+    	android:layout_height="@dimen/airm_tile_details_height"
+    	android:padding="@dimen/airm_panel_padding"
+    	android:background="@color/airm_explorer_panel_bg">
+    	
+        <ImageView 
+			android:id="@android:id/icon"
+        	android:layout_width="@dimen/airm_app_list_icon_size"
+    		android:layout_height="@dimen/airm_app_list_icon_size"
+    		android:contentDescription="@string/airm_descr_app_icon"            
+            />
+
+        <TextView
+            android:id="@+id/airm_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@android:id/icon"
+            android:layout_toRightOf="@android:id/icon"
+            android:layout_marginLeft="@dimen/airm_panel_margin"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/airm_textCategories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/airm_title"
+            android:layout_alignLeft="@+id/airm_title"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+        <!-- TextView
+            android:id="@+id/airm_textLikeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/airm_textCategories"
+            android:layout_alignLeft="@+id/airm_title"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:drawableLeft="@drawable/airm_like_active_small"
+            android:background="@drawable/airm_grey_frame" 
+            android:textSize="@dimen/airm_tiny_text"/>
+
+        <TextView
+            android:id="@+id/airm_textReviewCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/airm_textLikeCount"
+            android:layout_toRightOf="@+id/airm_textLikeCount"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:drawableLeft="@drawable/airm_chat_active_small"
+            android:background="@drawable/airm_grey_frame" 
+            android:textSize="@dimen/airm_tiny_text"/ -->
+        
+        <ImageView 
+			android:id="@+id/airm_imageMarket"
+        	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/airm_price1"
+            android:layout_alignTop="@+id/airm_price1"
+            android:layout_toLeftOf="@+id/airm_price1"
+            android:background="@drawable/airm_grey_frame"
+            android:padding="@dimen/airm_panel_padding"
+    		android:src="@drawable/airm_market_google"
+    		android:contentDescription="@string/airm_descr_app_market"            
+            />
+
+        <TextView
+            android:id="@+id/airm_price1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:minWidth="60dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/airm_price_value"
+            android:background="@color/airm_price_bg"
+            android:layout_marginLeft="@dimen/airm_small_padding"
+            android:padding="@dimen/airm_panel_padding"
+            />
+
+        <TextView
+            android:id="@+id/airm_textRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/airm_price1"
+            android:layout_alignLeft="@android:id/icon"
+            android:drawablePadding="@dimen/airm_small_padding"
+            android:drawableRight="@drawable/airm_star_filled_small"
+            android:gravity="center_vertical"
+            android:padding="@dimen/airm_small_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+    </RelativeLayout>
+    
+    <FrameLayout 
+        android:id="@+id/airm_layoutScreenshot"
+        android:layout_width="match_parent"
+    	android:layout_height="@dimen/airm_tile_screenshot_height"
+    	android:layout_below="@+id/airm_layoutAppDetails"
+    	android:padding="@dimen/airm_panel_padding"
+    	android:layout_marginTop="@dimen/airm_explorer_panel_top_margin"
+    	android:background="@color/airm_explorer_panel_bg"
+   		android:visibility="gone"            
+    	>
+
+        <ImageView 
+			android:id="@android:id/icon1"
+        	android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_gravity="center"
+    		android:scaleType="centerInside"
+    		android:contentDescription="@string/airm_descr_app_screenshot"
+            />
+        
+    </FrameLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/airm_layoutAppInfo"
+        android:layout_width="match_parent"
+    	android:layout_height="@dimen/airm_tile_descr_height"
+    	android:layout_below="@+id/airm_layoutScreenshot"
+    	android:layout_marginTop="@dimen/airm_explorer_panel_top_margin"
+    	android:background="@color/airm_explorer_panel_bg"
+    	android:padding="@dimen/airm_panel_padding"
+    	android:visibility="gone">
+
+        <TextView
+            android:id="@+id/airm_textDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/airm_blue_frame"
+            android:maxLines="4"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+    </RelativeLayout>
+        
+
+</RelativeLayout>

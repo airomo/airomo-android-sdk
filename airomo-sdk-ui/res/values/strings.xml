@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="airm_app_name">airomo_sdk_ui</string>
+
+	<string name="airm_descr_app_icon">Application icon</string>
+	<string name="airm_descr_app_screenshot">Application screenshot</string>
+	<string name="airm_descr_app_market">Application source marketplace</string>	
+
+	<string name="airm_label_total_found">Found</string>
+	
+	<string name="airm_title_app_search">Search for</string>	
+	<string name="airm_title_app_search_url">Search for URL</string>	
+	<string name="airm_title_app_search_meta_keyworks">Keyword Search</string>	
+	<string name="airm_title_categories">Categories</string>
+    <string name="airm_title_tags">Tags</string>
+	
+    <string name="airm_btn_cost_paid">Paid</string>
+    <string name="airm_btn_cost_free">FREE</string>
+    
+	<string name="airm_app_sort_alpha">Alphabetically</string>	
+	<string name="airm_app_sort_river">Most recently Used</string>
+	<string name="airm_app_sort_popular">Most popular with users</string>
+	<string name="airm_app_sort_newest">Most recently added</string>
+	<string name="airm_app_sort_rating">Highly star rated</string>
+	<string name="airm_app_sort_title">SELECT FEED TYPE</string>
+	<string name="airm_app_sort_title_header">Apps feed type</string>
+	
+	<string name="airm_title_app_search">Search</string>
+	<string name="airm_not_aval">n/a</string>
+	
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Airomo SDK Sample</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_search_hint">Search apps</string>
+    <string name="menu_search">Search apps</string>
+    <string name="hint_edit_email">Enter user email</string>
+    <string name="hint_edit_password">Enter user password</string>
+    <string name="label_airomo_login">Airomo Login</string>
+    <string name="btn_login">Login to Airomo</string>
+    <string name="label_logged_in_as">Logged in as:</string>
+    <string name="label_login_type">Login type:</string>
+    <string name="btn_logout">Log out from Airomo</string>
+    
+    <string name="error_empty_email">Please enter valid email</string>
+    <string name="error_empty_password">Please enter valid password</string>
+    <string name="btn_login_by_google">Login by Google</string>
+    
+    <string name="choose_account">Choose account</string>
+    
+    <string name="menu_app_list_title">Applications list</string>
+    
+    <string name="menu_app_list_title_condensed">Apps</string>
+    
+	<string name="tab_explore_small">SMALL</string>    
+	<string name="tab_explore_medium">MEDIUM</string>    
+	<string name="tab_explore_large">LARGE</string>    
+    
+	<string name="hint_search_query">Enter query</string>    
+	<string name="hint_search_url">Enter URL</string>    
+	<string name="hint_search_keyword">Enter keywords</string>    
+</resources>

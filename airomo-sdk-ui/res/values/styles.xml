@@ -1,0 +1,35 @@
+<resources>
+    <style name="airm_Tag.Text" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/airm_tag_text_sel</item>
+        <item name="android:textSize">@dimen/airm_tag_text_size</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="airm_Tag.Text.Sel" parent="@style/airm_Tag.Text">
+        <item name="android:background">@drawable/airm_tag_sel_bg</item>
+        <item name="android:textColor">@color/airm_tag_text_sel</item>
+    </style>
+
+    <style name="airm_Tag.Text.Norm" parent="@style/airm_Tag.Text">
+        <item name="android:background">@drawable/airm_tag_norm_bg</item>
+        <item name="android:textColor">@color/airm_tag_text_norm</item>
+        </style>
+
+    <style name="airm_Tag.Text.Norm.Small" parent="@style/airm_Tag.Text">
+        <item name="android:background">@drawable/airm_tag_norm_bg</item>
+        <item name="android:textColor">@color/airm_tag_text_norm</item>
+        <item name="android:minWidth">@dimen/airm_tag_small_min_width</item>
+    </style>
+        
+    <style name="airm_Category.Text.Norm.Small" parent="@style/airm_Tag.Text">
+        <item name="android:background">@drawable/airm_tag_sel_bg</item>
+        <item name="android:textColor">@color/airm_tag_text_sel</item>
+        <item name="android:minWidth">@dimen/airm_tag_small_min_width</item>
+    </style>
+
+    <style name="airm_FilterInfo.Text" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/airm_filter_info_text</item>
+    </style>
+    
+</resources>

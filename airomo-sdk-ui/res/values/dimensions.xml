@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="airm_app_list_icon_size">50dip</dimen>
+    <dimen name="airm_quick_search_icon_size">30dip</dimen>
+    
+    <dimen name="airm_small_padding">2dp</dimen>
+    <dimen name="airm_explorer_panel_top_margin">1dp</dimen>
+    <dimen name="airm_tiny_text">11sp</dimen>
+    <dimen name="airm_app_explore_item_width">157dip</dimen>
+    
+    <dimen name="airm_tag_padding_horiz">3dp</dimen>
+    <dimen name="airm_tag_padding_vert">2dp</dimen>
+    <dimen name="airm_tag_min_width">95dip</dimen>
+    <dimen name="airm_tag_text_size">14sp</dimen>
+    
+    <dimen name="airm_tag_small_min_width">60dip</dimen>
+    <dimen name="airm_tag_small_text_size">9sp</dimen>
+
+    <dimen name="airm_tile_details_height">110dp</dimen>
+    <dimen name="airm_tile_screenshot_height">240dp</dimen>
+    <dimen name="airm_tile_descr_height">100dp</dimen>
+    
+</resources>

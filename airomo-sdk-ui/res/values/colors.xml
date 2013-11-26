@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="airm_explorer_panel_bg">#ffe1e2e3</color>
+     <color name="airm_blue_text">#ff00afd1</color>
+     <color name="airm_blue_frame">#ff00afd1</color>
+     <color name="airm_grey_frame">#ffb9b9b9</color>
+     
+    <color name="airm_active_text">#ff22afd5</color>
+    <color name="airm_inactive_text">#ffb6b6b6</color>
+    <color name="airm_my_like_text">#ffc61343</color>    
+
+    <color name="airm_tag_text_norm">#ff7a818a</color>    
+    <color name="airm_tag_text_sel">#ffffffff</color>    
+    <color name="airm_tag_bg_norm">#ff292c34</color>    
+    <color name="airm_tag_bg_sel">#fff7c551</color>    
+    
+    <color name="airm_filter_info_bg">#ff40434b</color>
+    <color name="airm_filter_info_text">#ff8e96a0</color>
+
+    <color name="airm_price_bg">#ff73ba5d</color>
+    <color name="airm_price_free">#fffcfdae</color>
+    <color name="airm_price_value">#ffffffff</color>
+</resources>
