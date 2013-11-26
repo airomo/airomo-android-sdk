@@ -15,6 +15,7 @@ import android.view.MenuItem;
 
 import com.airomo.sdk.AiromoSDKConnector;
 import com.airomo.sdk.common.Platforms;
+import com.airomo.sdk.common.SoftwareMarkets;
 import com.airomo.sdk.sample.common.TabListener;
 import com.airomo.sdk.ui.fragment.AppExploreGridFragment;
 import com.airomo.sdk.ui.fragment.ExploreGridFragment;
@@ -76,6 +77,18 @@ public class MainActivity extends ActionBarActivity
 		defaultFilter = new Bundle();
 		// Allow Android applications only
 		defaultFilter.putString(AiromoSDKConnector.FILTER_PLATFORM, Integer.toString(Platforms.Android.ordinal()));
+		// Allow Google Play and Amazon markets only
+		/*defaultFilter.putIntArray(AiromoSDKConnector.FILTER_STORE, new int[] { SoftwareMarkets.GooglePlay.ordinal(), SoftwareMarkets.Amazon.ordinal() });
+		// Allow only 3 categories
+		defaultFilter.putIntArray(AiromoSDKConnector.FILTER_CATEGORIES, new int[] { 1, 2, 3 } );
+		// Allow only 3 tags
+		defaultFilter.putStringArray(AiromoSDKConnector.FILTER_TAGS, new String[] { "games", "kids" } );
+		// Allow only free applications
+		defaultFilter.putString(AiromoSDKConnector.FILTER_PRICE, AiromoSDKConnector.FILTER_PRICE_FREE );
+		// Filter applications by one of query, meta-keywords or url
+		defaultFilter.putString(AiromoSDKConnector.FILTER_QUERY, "skype" );
+		//defaultFilter.putString(AiromoSDKConnector.FILTER_META_KEYWORDS, "voice,chat,free" );
+		//defaultFilter.putString(AiromoSDKConnector.FILTER_URL, "www.skype.com" );*/
 		
     	// If this is ACTION_SEARCH intent, then add search query to the default filter 
     	if (Intent.ACTION_SEARCH.equals(intent.getAction()))
@@ -84,7 +97,7 @@ public class MainActivity extends ActionBarActivity
     	}
     	
     	// Create app explore fragments
-    	createAppExploreFragments(savedInstanceState);
+    	createAppExploreFragments(savedInstanceState);    	
     }
 
 	
@@ -155,6 +168,8 @@ public class MainActivity extends ActionBarActivity
 	    	, ExploreGridTileType.Small
 	    	, filter /*filterBundle*/
 	    	, true /*clearTop*/);
+	    
+	    
 	    tab = actionBar.newTab()
            .setText(R.string.tab_explore_small)
            .setTabListener(new TabListener<AppExploreGridFragment>(
