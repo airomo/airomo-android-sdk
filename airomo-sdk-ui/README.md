@@ -11,7 +11,7 @@ Build instructions:
 4. On **"Order and Export"** tab make sure *airomo-sdk-ui-lib.jar* is checked;
 5. Import *airomo-sdk-ui* library into your project;
 6. Make sure your *project.properties* file contains *"manifestmerger.enabled=true"* command to import manifest settings from the library;
-7. Clone and import *Android-Universal-Image-Loader* library into your project from [this link](https://github.com/nostra13/Android-Universal-Image-Loader);
+7. Clone and import *Android-Universal-Image-Loader* library into your project from [here](https://github.com/nostra13/Android-Universal-Image-Loader);
 8. Right-click on *airomo-sdk-ui* project name and select **"Properties | Android"**. Make sure *airomo-sdk* and *Android-Universal-Image-Loader* libraries are correctly imported in *Library* group;
 9. Make sure *proguard-project.txt* contains correct *"-include"* of *airomo-sdk/proguard-project.txt* file. By default it's assumed that *airomo-sdk* and *airomo-sdk-ui* are in the same folder so *proguard-project.txt* contains `-include ../airomo-sdk/proguard-project.txt` instruction;
 10. Inherit your *Application* class from *com.airomo.sdk.ui.AiromoSDKUIApplication* and make sure you called *super.OnCreate* method to correctly initialize *Android-Universal-Image-Loader* library instance;

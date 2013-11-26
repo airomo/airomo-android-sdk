@@ -7,7 +7,7 @@ Build instructions:
 
 1. Make sure *airomo-sdk* and *airomo-sdk-ui* libraries are already imported and configured;
 2. Import application project into Eclipse;
-3. Right-click in *airomo-sdk-android-sample* project name and select **"Properties | Android"**. Make sure *airomo-sdk-ui* and Google *android-support-v7-appcompat* libraries  are correctly imported into Library group. Import and configure *Google Support V7 Appcompat* library from *SDK* if necessary see [example link](http://developer.android.com/tools/support-library/setup.html) for reference;
+3. Right-click in *airomo-sdk-android-sample* project name and select **"Properties | Android"**. Make sure *airomo-sdk-ui* and Google *android-support-v7-appcompat* libraries  are correctly imported into Library group. Import and configure *Google Support V7 Appcompat* library from *SDK* if necessary see [this link](http://developer.android.com/tools/support-library/setup.html) for reference;
 4. Make sure *proguard-project.txt* contains correct *"-include"* of *airomo-sdk-ui/proguard-project.txt* file. By default it's assumed that *airomo-sdk*, *airomo-sdk-ui* and *airomo-sdk-android-sample* are in the same folder so *proguard-project.txt* contains `-include ../airomo-sdk-ui/proguard-project.txt` instruction;
 
 The following classes are included into the sample project:

@@ -24,3 +24,7 @@
 -keep class com.airomo.sdk.sample.MainActivity {
    public *;
 }
+
+-keep class android.support.v7.widget.SearchView {
+   public *;
+}
