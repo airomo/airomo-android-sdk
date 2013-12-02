@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.airomo.sdk.sample"
-    android:versionCode="7"
-    android:versionName="1.07" 
+    android:versionCode="19"
+    android:versionName="1.19" 
     android:installLocation="auto">
 
     <uses-sdk
@@ -17,7 +17,7 @@
         android:theme="@style/AppTheme" android:name="AiromoSDKSampleApplication">
         <activity
             android:name="com.airomo.sdk.sample.MainActivity"
-            android:label="@string/app_name" android:windowSoftInputMode="stateVisible|adjustPan" android:launchMode="singleInstance">
+            android:label="@string/app_name" android:windowSoftInputMode="adjustPan" android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

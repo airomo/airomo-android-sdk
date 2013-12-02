@@ -29,15 +29,15 @@ To insert applications exploring fragment into your UI you need to do the follow
 
 		defaultFilter = new Bundle();
 		// Allow Android applications only
-		defaultFilter.putString(AiromoSDKConnector.FILTER_PLATFORM, Integer.toString(Platforms.Android.ordinal()));
+		defaultFilter.putIntArray(AiromoSDKConnector.FILTER_PLATFORMS, new int [] { Platforms.Android.ordinal() });
 		// Allow Google Play and Amazon markets only
-		defaultFilter.putIntArray(AiromoSDKConnector.FILTER_STORE, new int[] { SoftwareMarkets.GooglePlay.ordinal(), SoftwareMarkets.Amazon.ordinal() });
+		defaultFilter.putIntArray(AiromoSDKConnector.FILTER_STORES, new int[] { SoftwareMarkets.GooglePlay.ordinal() });
 		// Allow only 3 categories
 		defaultFilter.putIntArray(AiromoSDKConnector.FILTER_CATEGORIES, new int[] { 1, 2, 3 } );
-		// Allow only 2 tags
+		// Allow only 3 tags
 		defaultFilter.putStringArray(AiromoSDKConnector.FILTER_TAGS, new String[] { "games", "kids" } );
 		// Allow only free applications
-		defaultFilter.putString(AiromoSDKConnector.FILTER_PRICE, AiromoSDKConnector.FILTER_PRICE_FREE );
+		// defaultFilter.putString(AiromoSDKConnector.FILTER_PRICE, AiromoSDKConnector.FILTER_PRICE_FREE );
 		// Filter applications by one of query, meta-keywords or url
 		defaultFilter.putString(AiromoSDKConnector.FILTER_QUERY, "skype" );
 		//defaultFilter.putString(AiromoSDKConnector.FILTER_META_KEYWORDS, "voice,chat,free" );

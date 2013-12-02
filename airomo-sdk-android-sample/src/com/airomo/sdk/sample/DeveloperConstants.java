@@ -8,11 +8,11 @@ public final class DeveloperConstants
 	/**
 	 * Your Developer Client ID value. Please make sure to replace by your exact value.
 	 */
-	public static final String CLIENT_ID = "582169394";
+	public static final String CLIENT_ID = "474820607";
 	/**
 	 * Your Developer API Key value. Please make sure to replace by your exact value.
 	 */
-	public static final String API_KEY = "k60vg92ehyplqi99fhlnz1bpbxgmvudw";
+	public static final String API_KEY = "kapdy4ixeo5lq8vehqz2hcopn72bijtm";
 	/**
 	 * Your Ad campaign Partner ID value. Please make sure to replace by your exact value. Zero by default. 
 	 */

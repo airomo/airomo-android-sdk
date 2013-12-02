@@ -62,11 +62,14 @@ public class MainActivity extends ActionBarActivity
 		super.onNewIntent(intent);
 	}
 
+	private boolean instanceStateSaved = false; 
+	
 	// Save selected tab ID for screen rotation handling
 	@Override
 	public void onSaveInstanceState(Bundle outState)
 	{
-		outState.putInt(SELECTED_TAB, getSupportActionBar().getSelectedTab().getPosition());		
+		outState.putInt(SELECTED_TAB, getSupportActionBar().getSelectedTab().getPosition());
+		instanceStateSaved = true;
 		super.onSaveInstanceState(outState);
 	}
 
@@ -76,16 +79,16 @@ public class MainActivity extends ActionBarActivity
     	// Initialize default filter
 		defaultFilter = new Bundle();
 		// Allow Android applications only
-		defaultFilter.putString(AiromoSDKConnector.FILTER_PLATFORM, Integer.toString(Platforms.Android.ordinal()));
+		defaultFilter.putIntArray(AiromoSDKConnector.FILTER_PLATFORMS, new int [] { Platforms.Android.ordinal(), Platforms.iOS.ordinal() });
 		// Allow Google Play and Amazon markets only
-		/*defaultFilter.putIntArray(AiromoSDKConnector.FILTER_STORE, new int[] { SoftwareMarkets.GooglePlay.ordinal(), SoftwareMarkets.Amazon.ordinal() });
+		defaultFilter.putIntArray(AiromoSDKConnector.FILTER_STORES, new int[] { SoftwareMarkets.GooglePlay.ordinal() });
 		// Allow only 3 categories
-		defaultFilter.putIntArray(AiromoSDKConnector.FILTER_CATEGORIES, new int[] { 1, 2, 3 } );
+		/*defaultFilter.putIntArray(AiromoSDKConnector.FILTER_CATEGORIES, new int[] { 1, 2, 3 } );
 		// Allow only 3 tags
-		defaultFilter.putStringArray(AiromoSDKConnector.FILTER_TAGS, new String[] { "games", "kids" } );
+		defaultFilter.putStringArray(AiromoSDKConnector.FILTER_TAGS, new String[] { "games", "kids" } );*/
 		// Allow only free applications
-		defaultFilter.putString(AiromoSDKConnector.FILTER_PRICE, AiromoSDKConnector.FILTER_PRICE_FREE );
-		// Filter applications by one of query, meta-keywords or url
+		// defaultFilter.putString(AiromoSDKConnector.FILTER_PRICE, AiromoSDKConnector.FILTER_PRICE_FREE );
+		/*// Filter applications by one of query, meta-keywords or url
 		defaultFilter.putString(AiromoSDKConnector.FILTER_QUERY, "skype" );
 		//defaultFilter.putString(AiromoSDKConnector.FILTER_META_KEYWORDS, "voice,chat,free" );
 		//defaultFilter.putString(AiromoSDKConnector.FILTER_URL, "www.skype.com" );*/
@@ -144,6 +147,8 @@ public class MainActivity extends ActionBarActivity
 	// Display fragments with applications explorer 
 	public void createAppExploreFragments(Bundle savedInstanceState)
 	{
+		if (instanceStateSaved) return;
+		
 		ActionBar actionBar = getSupportActionBar();
 	    actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 	    
@@ -159,7 +164,8 @@ public class MainActivity extends ActionBarActivity
 	    filter = new Bundle();
 	    if (defaultFilter != null)
 	    	filter.putAll(defaultFilter);
-	    //filter.putString(AiromoSDKConnector.FILTER_TAGS, "sport,soccer");
+	    filter.putIntArray(AiromoSDKConnector.FILTER_CATEGORIES, new int[] { 18 } );
+	    filter.putStringArray(AiromoSDKConnector.FILTER_TAGS, new String [] { /*"sport",*/ "soccer" } );
 	    
 	    // Create App Explore fragment with SMALL tiles
 	    bundle = ExploreGridFragment.makeArguments(
@@ -168,8 +174,7 @@ public class MainActivity extends ActionBarActivity
 	    	, ExploreGridTileType.Small
 	    	, filter /*filterBundle*/
 	    	, true /*clearTop*/);
-	    
-	    
+	    	    	    
 	    tab = actionBar.newTab()
            .setText(R.string.tab_explore_small)
            .setTabListener(new TabListener<AppExploreGridFragment>(
@@ -184,6 +189,7 @@ public class MainActivity extends ActionBarActivity
 	    filter = new Bundle();
 	    if (defaultFilter != null)
 	    	filter.putAll(defaultFilter);
+	    filter.putIntArray(AiromoSDKConnector.FILTER_CATEGORIES, new int[] { 1, 2, 3 } );
 	    
 	    // Create App Explore fragment with MEDIUM tiles
 	    bundle = ExploreGridFragment.makeArguments(

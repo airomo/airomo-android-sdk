@@ -32,9 +32,12 @@
         android:layout_height="wrap_content"
         android:text="@string/airm_label_total_found"
         android:layout_alignBottom="@android:id/text2"
+        android:layout_alignTop="@android:id/text2"
         android:layout_toLeftOf="@android:id/text2"
         style="@style/airm_FilterInfo.Text"
         android:background="@drawable/airm_grey_frame"
+        android:paddingLeft="@dimen/airm_panel_padding"
+        android:paddingRight="@dimen/airm_panel_padding"
     />
 
     <TextView 
@@ -46,6 +49,8 @@
         android:layout_alignParentRight="true"
         android:text="@string/airm_not_aval"
         android:background="@drawable/airm_grey_frame"
+        android:paddingLeft="@dimen/airm_panel_padding"
+        android:paddingRight="@dimen/airm_panel_padding"
     />
     
 	<HorizontalScrollView 
@@ -54,6 +59,7 @@
 		android:layout_height="wrap_content"
 		android:scrollbars="none"
 		android:layout_below="@android:id/text1"
+		android:layout_marginTop="@dimen/airm_panel_margin"
 		android:overScrollMode="ifContentScrolls">
 
 		<LinearLayout 
@@ -73,6 +79,7 @@
 		        android:id="@+id/airm_layoutTags2"
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/airm_panel_margin"
 		        android:orientation="horizontal"
 		        android:gravity="left|bottom"/>
 		</LinearLayout>
