@@ -1,7 +1,7 @@
 Airomo SDK UI for Android *(airomo-sdk-ui)*. 
 ============================================
 
-This library contains Airomo exploring UI fragments to be reused in your projects.
+This library includes ready to use UI fragments and full integration with the Airomo cloud services for Contextual App delivery. 
 
 Build instructions:
 ___________________
