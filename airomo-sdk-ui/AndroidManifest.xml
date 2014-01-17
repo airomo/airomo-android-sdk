@@ -5,7 +5,6 @@
     <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="19"/>
     
     <application
-        android:allowBackup="true"
-        android:name="com.airomo.sdk.ui.AiromoSDKUIApplication"/>
+        android:allowBackup="true"/>
     
 </manifest>

@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
     <style name="airm_Tag.Text" parent="@android:style/Widget.TextView">
         <item name="android:textColor">@color/airm_tag_text_sel</item>
         <item name="android:textSize">@dimen/airm_tag_text_size</item>
@@ -31,5 +31,28 @@
     <style name="airm_FilterInfo.Text" parent="@android:style/Widget.TextView">
         <item name="android:textColor">@color/airm_filter_info_text</item>
     </style>
+
+    <style name="airm_Filter.Label" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@color/airm_filter_label_text</item>
+		<item name="android:background">@drawable/airm_filter_label_bg</item>
+		<item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+    
+    
+    <style name="airm_Filter.Button.Norm" parent="@android:style/Widget.Button">
+		<item name="android:background">@drawable/airm_tag_norm_bg</item>
+		<item name="android:layout_margin">@dimen/airm_panel_padding</item>
+		<item name="android:textColor">@color/airm_tag_text_norm</item>
+		<item name="android:minWidth">85dp</item>				
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+	</style>
+
+    <style name="airm_Filter.Button.Sel" parent="@android:style/Widget.Button">
+		<item name="android:background">@drawable/airm_tag_sel_bg</item>
+		<item name="android:layout_margin">@dimen/airm_panel_padding</item>
+		<item name="android:textColor">@color/airm_tag_text_sel</item>
+		<item name="android:minWidth">85dp</item>				
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+	</style>
     
 </resources>

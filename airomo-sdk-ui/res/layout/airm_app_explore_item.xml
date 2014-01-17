@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
     	android:layout_height="@dimen/airm_tile_details_height"
     	android:padding="@dimen/airm_panel_padding"
-    	android:background="@color/airm_explorer_panel_bg">
+    	android:background="@drawable/airm_explorer_panel_bg">
     	
         <ImageView 
 			android:id="@android:id/icon"

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="airm_descr_app_icon">应用图标</string>
+	<string name="airm_descr_app_screenshot">应用截屏</string>
+	<string name="airm_descr_app_market">应用的源市场</string>	
+
+	<string name="airm_label_total_found">已找到</string>
+	
+	<string name="airm_title_app_search">如下应用与关键词相关</string>	
+	<string name="airm_title_app_search_url">如下应用与关键词相关</string>	
+	<string name="airm_title_app_search_meta_keyworks">关键字搜索</string>	
+	<string name="airm_title_categories">类别</string>
+    <string name="airm_title_tags">标签</string>
+	
+    <string name="airm_btn_cost_paid">付费</string>
+    <string name="airm_btn_cost_free">免费</string>
+    
+	<string name="airm_app_sort_alpha">按字母顺序</string>	
+	<string name="airm_app_sort_river">最近使用的</string>
+	<string name="airm_app_sort_popular">用户中最流行的</string>
+	<string name="airm_app_sort_newest">最新添加的</string>
+	<string name="airm_app_sort_rating">高评分的</string>
+	<string name="airm_app_sort_title">选择收取类型</string>
+	<string name="airm_app_sort_title_header">应用的收取类型</string>
+	
+	<string name="airm_title_app_search">搜索</string>
+	
+	<string name="airm_filter_app_store">按应用市场过滤</string>
+	<string name="airm_filter_cost">按费用过滤</string>
+	<string name="airm_price_free">免费</string>
+	<string name="airm_price_paid">付费</string>
+	
+    <string name="sliding_help_left">滑屏以获取信息</string>
+    <string name="sliding_help_right">滑屏以进行选择</string>
+		
+</resources>

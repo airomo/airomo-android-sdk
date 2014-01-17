@@ -23,7 +23,7 @@
 	<string name="airm_error_item_did_not_liked">Unable to unlike. You never liked this item.</string>
 	<string name="airm_error_item_recently_shared">Unable to share. You already shared this item less than 5 minues ago. Try again later</string>
 	<string name="airm_error_item_did_not_shared">Unable to unshare. You never shared this item.</string>
-	<string name="airm_error_not_bound_to_service">Unable to unshare. You never shared this item.</string>
+	<string name="airm_error_not_bound_to_service">Not bound to service. Closing&#8230;</string>
 	
     <string name="airm_ios_name">iOS</string>
     <string name="airm_android_name">Android</string>

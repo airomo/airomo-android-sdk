@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="airm_app_name">airomo_sdk_ui</string>
 
 	<string name="airm_descr_app_icon">Application icon</string>
@@ -8,8 +8,8 @@
 
 	<string name="airm_label_total_found">Found</string>
 	
-	<string name="airm_title_app_search">Search for</string>	
-	<string name="airm_title_app_search_url">Search for URL</string>	
+	<string name="airm_title_app_search">Apps relevant to</string>	
+	<string name="airm_title_app_search_url">Apps relevant to</string>	
 	<string name="airm_title_app_search_meta_keyworks">Keyword Search</string>	
 	<string name="airm_title_categories">Categories</string>
     <string name="airm_title_tags">Tags</string>
@@ -28,4 +28,8 @@
 	<string name="airm_title_app_search">Search</string>
 	<string name="airm_not_aval">n/a</string>
 	
+	<string name="airm_filter_app_store">Filter by App Store</string>
+	<string name="airm_filter_cost">Filter by Cost</string>
+	<string name="airm_price_free">Free</string>
+	<string name="airm_price_paid">Paid</string>
 </resources>

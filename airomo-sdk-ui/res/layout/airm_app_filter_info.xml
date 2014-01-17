@@ -20,6 +20,8 @@
         android:layout_height="wrap_content"
         style="@style/airm_FilterInfo.Text"
         android:textStyle="bold"
+        android:ellipsize="marquee"
+        android:layout_alignWithParentIfMissing="true"
         android:layout_toRightOf="@+id/airm_labelParam"
         android:layout_toLeftOf="@+id/airm_labelTotal"
         android:layout_alignBottom="@+id/airm_labelParam"

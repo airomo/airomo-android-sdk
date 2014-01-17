@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="airm_descr_app_icon">Иконка приложения</string>
+	<string name="airm_descr_app_screenshot">Копия экрана приложения</string>
+	<string name="airm_descr_app_market">Рынок приложений</string>	
+
+	<string name="airm_label_total_found">Найдено</string>
+	
+	<string name="airm_title_app_search">Приложения для</string>	
+	<string name="airm_title_app_search_url">Приложения для</string>	
+	<string name="airm_title_app_search_meta_keyworks">Поиск слов</string>	
+	<string name="airm_title_categories">Категории</string>
+    <string name="airm_title_tags">Тэги</string>
+	
+    <string name="airm_btn_cost_paid">Платно</string>
+    <string name="airm_btn_cost_free">ДАРОМ</string>
+    
+	<string name="airm_app_sort_alpha">По алфавиту</string>	
+	<string name="airm_app_sort_river">Часто используемые</string>
+	<string name="airm_app_sort_popular">Наиболее популярные</string>
+	<string name="airm_app_sort_newest">Недавно добавленные</string>
+	<string name="airm_app_sort_rating">Наивысший рейтинг</string>
+	<string name="airm_app_sort_title">ВЫБОР ТИПА ЛЕНТЫ</string>
+	<string name="airm_app_sort_title_header">Лента приложений</string>
+	
+	<string name="airm_title_app_search">Поиск</string>
+	<string name="airm_not_aval">н/д</string>
+	
+	<string name="airm_filter_app_store">Фильтр по рынку приложений</string>
+	<string name="airm_filter_cost">Фильтр по цене</string>
+	<string name="airm_price_free">Бесплатные</string>
+	<string name="airm_price_paid">Платные</string>
+</resources>

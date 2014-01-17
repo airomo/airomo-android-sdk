@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/airm_filter_info_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:padding="@dimen/airm_panel_padding"
+        >
+        
+        <LinearLayout
+            android:id="@+id/layoutFilterAppStore" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+            >
+            
+            <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/airm_filter_app_store"
+		        style="@style/airm_Filter.Label"
+                />
+            
+            <TableLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content">
+                
+                <TableRow 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content">
+                    
+                    <Button 
+                        android:id="@+id/btnMarketGoglePlay"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/airm_market_google_play"
+				        style="@style/airm_Filter.Button.Sel"
+                        />
+
+                    <Button 
+                        android:id="@+id/btnMarketAmazon"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/airm_market_amazon"
+				        style="@style/airm_Filter.Button.Norm"
+                        />
+                    
+                </TableRow>
+
+                <TableRow 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content">
+                    
+                    <Button 
+                        android:id="@+id/btnMarketNook"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/airm_market_nook"
+				        style="@style/airm_Filter.Button.Norm"
+                        />
+                    
+                </TableRow>                
+            </TableLayout>            
+        </LinearLayout>
+        
+
+        <LinearLayout
+            android:id="@+id/layoutFilterCost" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+            >
+            
+            <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/airm_filter_cost"
+		        style="@style/airm_Filter.Label"
+                />
+            
+            <TableLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content">
+                
+                <TableRow 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content">
+                    
+                    <Button 
+                        android:id="@+id/btnPriceFree"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/airm_price_free"
+				        style="@style/airm_Filter.Button.Sel"
+                        />
+
+                    <Button 
+                        android:id="@+id/btnPricePaind"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/airm_price_paid"
+				        style="@style/airm_Filter.Button.Norm"
+                        />
+                    
+                </TableRow>
+
+            </TableLayout>            
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+    
+
+</ScrollView>

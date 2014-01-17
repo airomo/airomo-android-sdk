@@ -16,7 +16,9 @@
     
     <color name="airm_filter_info_bg">#ff40434b</color>
     <color name="airm_filter_info_text">#ff8e96a0</color>
-
+    <color name="airm_filter_label_text">@color/airm_filter_info_text</color>
+    <color name="airm_filter_label_bg">#8032353e</color>
+    
     <color name="airm_price_bg">#ff73ba5d</color>
     <color name="airm_price_free">#fffcfdae</color>
     <color name="airm_price_value">#ffffffff</color>

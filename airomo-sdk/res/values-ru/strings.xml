@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="airm_error_server_general">Общая ошибка сервера</string>
+    <string name="airm_error_no_internet_connection">Нет соединения. Проверьте ваше WiFi/3G соединения.</string>
+    <string name="airm_error_server_timed_out">Сервер не отвечает</string>
+    <string name="airm_error_server_unknown">Неизвестная ошибка сервера</string>
+    <string name="airm_error_invalid_login">Логин или пароль неверны</string>
+    <string name="airm_error_invalid_resource">Неверный удаленный ресурс</string>
+    <string name="airm_error_string_too_short">Введено недостаточно символов.</string>
+    <string name="airm_error_string_too_short_login">Слишком короткое имя пользователя. Должно быть более 5-ти символов.</string>
+    <string name="airm_error_string_too_short_password">Слишком короткий пароль. Должно быть более 5-ти символов.</string>
+    <string name="airm_error_signup_failed">Ошибка регистрайии пользователя. Попробуйте иное имя.</string>
+    <string name="airm_error_file_conflict">Тайое файл или данные уже существуют. Попробуйте другое имя.</string>
+    <string name="airm_error_file_download">Ошибка получения файла</string>
+    <string name="airm_error_not_found">Файл или данные отсутсвуют на сервере</string>
+    <string name="airm_error_login_conflict">Логин, емайл или фэйсбук-логин уже кем-то используются</string>
+    <string name="airm_error_enter_email_and_pass">Пожалуйста, введите емайл и пароль Airomo, чтобы подключить ваш аккаунт Фэйсбук</string>
+    <string name="airm_error_no_address_info">Адрес для вашего местоположения нежостпупен. Пожалуйста, введите его вручную.</string>
+	
+    <string name="airm_android_name">Андроид</string>
+    <string name="airm_unknown_name">Неизвестно</string>
+
+    <string name="airm_btn_sign_up">Регистрация</string>
+    <string name="airm_label_or">или</string>
+    <string name="airm_btn_sign_in">Вход</string>
+    <string name="airm_btn_why_sign_up">зачем регистрироваться?</string>
+    <string name="airm_hint_edit_login">Имя или емайл</string>
+    <string name="airm_login_password">Ваш пароль</string>
+    <string name="airm_btn_login">Вход</string>
+    <string name="airm_btn_forgot_password">Забыли пароль?</string>
+
+    <string name="airm_btn_signup">Регистрация</string>
+    <string name="airm_hint_edit_fullname">Полное имя</string>
+    <string name="airm_hint_edit_login_signup">Имя пользователя</string>
+    <string name="airm_hint_edit_email_signup">Емайл для восстановления пароля</string>
+
+    <string name="airm_btn_send_password">Пришлите мой пароль</string>
+    <string name="airm_hint_edit_email">Емайл</string>
+    
+    <string name="airm_error_enter_valid_fullname">Пожалуйста, введите полное имя из двух или более слов</string>
+    <string name="airm_error_enter_valid_login">Введите логин из как минимум 5 символов</string>
+    <string name="airm_error_enter_valid_email">Введиет правильный емайл</string>
+    <string name="airm_error_enter_valid_password">Введите пароль из как минимум 5 символов</string>
+    
+    <string name="airm_signing_in">Вход&#8230;</string>
+    <string name="airm_signing_up">Регистрация&#8230;</string>
+    
+    <string name="airm_title_signin">Существующий пользователь</string>
+    <string name="airm_title_signup">Реистрация нового пользователя</string>
+    <string name="airm_label_enable_app_login">Вы уверены, что хотите позволить данному приложению доступ к вашему аккаунту Airomo?</string>
+    <string name="airm_label_app_name">Приложение:</string>
+    <string name="airm_label_app_date">Создано:</string>
+    <string name="airm_btn_enable">Разрешить</string>
+    <string name="airm_btn_disable">Запретить</string>
+    
+</resources>

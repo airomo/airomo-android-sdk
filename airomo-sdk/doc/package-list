@@ -1,7 +1,3 @@
 com.airomo.sdk
-com.airomo.sdk.common
-com.airomo.sdk.dialog
 com.airomo.sdk.parcel
-com.airomo.sdk.parcel.api2.app
-com.airomo.sdk.parcel.appcurl
-com.airomo.sdk.parcel.category
+com.airomo.sdk.parcel.api2

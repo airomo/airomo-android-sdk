@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="airm_app_name">由Airomo Inc.推出的Appcurl</string>    
+    <string name="airm_error_server_general">一般的服务器错误</string>
+    <string name="airm_error_no_internet_connection">无连接，请检查你的WiFi/3G连接。</string>
+    <string name="airm_error_server_timed_out">服务器超时错误</string>
+    <string name="airm_error_server_unknown">未知服务器错误</string>
+    <string name="airm_error_invalid_login">用户登录名或者密码无效</string>
+    <string name="airm_error_invalid_resource">无效的远程资源请求</string>
+    <string name="airm_error_string_too_short">输入值过短。请添加更多的字符。</string>
+    <string name="airm_error_string_too_short_login">输入的用户名过短。至少应为5个字符。</string>
+    <string name="airm_error_string_too_short_password">输入的密码过短。至少应为5个字符。</string>
+    <string name="airm_error_signup_failed">新用户注册失败。请尝试使用其它的名称。</string>
+    <string name="airm_error_file_conflict">记录重复或者文件冲突。请尝试使用其它的名称。</string>
+    <string name="airm_error_file_download">下载文件时出错</string>
+    <string name="airm_error_not_found">服务器上未找到文件或数据</string>
+    <string name="airm_error_login_conflict">已由他人使用登录名、邮件地址或者facebook账户登录。</string>
+    <string name="airm_error_enter_email_and_pass">请输入邮件地址和Airomo的密码以关联你的Facebook账户。</string>
+    <string name="airm_error_no_address_info">无法获取你位置的地址信息。请手动输入。</string>
+    <string name="airm_error_item_already_liked">无法点赞。你已经赞过了此项。</string>
+	<string name="airm_error_item_did_not_liked">无法取消点赞。你从没赞过此项。</string>
+	<string name="airm_error_item_recently_shared">无法分享。 你已经在不到5分钟前分享了此项。请稍后重试</string>
+	<string name="airm_error_item_did_not_shared">无法取消分享。你从没分享过此项。</string>
+	
+    <string name="airm_unknown_name">未知</string>
+
+    <string name="airm_descr_curl_icon">Appcurl标识</string>
+    <string name="airm_btn_sign_up">注册</string>
+    <string name="airm_label_or">或</string>
+    <string name="airm_btn_sign_in">登录</string>
+    <string name="airm_btn_why_sign_up">为何要注册？</string>
+    <string name="airm_hint_edit_login">用户名或邮箱</string>
+    <string name="airm_login_password">你的密码</string>
+    <string name="airm_btn_login">我要登录</string>
+    <string name="airm_btn_forgot_password">忘记密码了？</string>
+
+    <string name="airm_btn_signup">我要注册</string>
+    <string name="airm_hint_edit_fullname">全称</string>
+    <string name="airm_hint_edit_login_signup">选择一个炫酷的用户名</string>
+    <string name="airm_hint_edit_email_signup">用户恢复密码的邮件地址</string>
+
+    <string name="airm_btn_send_password">发送我的密码</string>
+    <string name="airm_hint_edit_email">邮件地址</string>
+    
+    <string name="airm_error_enter_valid_fullname">请输入有效的至少包含两个单词的全名</string>
+    <string name="airm_error_enter_valid_login">请输入有效的至少包含5个字符的登录名</string>
+    <string name="airm_error_enter_valid_email">请输入有效的邮件地址</string>
+    <string name="airm_error_enter_valid_password">请输入有效的至少包含5个字符的密码</string>
+    
+    <string name="airm_signing_in">正在登录&#8230;</string>
+    <string name="airm_signing_up">正在注册&#8230;</string>
+    
+    <string name="airm_title_signin">现有用户</string>
+    <string name="airm_title_signup">新用户注册</string>
+    <string name="airm_label_enable_app_login">你确定你想启用下述应用访问你的Airomo账户吗？</string>
+    <string name="airm_label_app_name">应用：</string>
+    <string name="airm_label_app_date">创建者：</string>
+    <string name="airm_btn_enable">启用</string>
+    <string name="airm_btn_disable">禁用</string>
+    		
+	<string name="airm_market_default">未知</string>    
+    
+</resources>
