@@ -1,7 +1,6 @@
 Airomo SDK for Android *(airomo-sdk)*. 
 =======================================
-
-Base functionality to access Airomo backend service API.
+Core functionality to access Airomo cloud services for Contextual App delivery. No UI fragment is included and expected to be developed by the client application developer. The data from the cloud is shared with the client app in JSON format.
 
 Build instructions:
 ___________________
