@@ -28,7 +28,7 @@
 		    android:label="Airomo SDK Service">
 		</service>
             
-        <service
+        <!-- service
             android:name="com.airomo.sdk.auth.AuthenticationService"
             android:exported="true">
             <intent-filter>
@@ -37,7 +37,7 @@
             <meta-data
                 android:name="android.accounts.AccountAuthenticator"
                 android:resource="@xml/airm_authenticator" />
-        </service>				
+        </service -->				
 		
 		<receiver android:name="com.airomo.sdk.service.receiver.ScreenActionsReceiver">
 			<intent-filter>

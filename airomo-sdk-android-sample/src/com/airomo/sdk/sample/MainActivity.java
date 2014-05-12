@@ -78,7 +78,7 @@ public class MainActivity extends ActionBarActivity
     {
     	// Initialize default filter
 		defaultFilter = new Bundle();
-		// Allow Android applications only
+		// Allow Android and iOS applications
 		defaultFilter.putIntArray(AiromoSDKConnector.FILTER_PLATFORMS, new int [] { Platforms.Android.ordinal(), Platforms.iOS.ordinal() });
 		// Allow Google Play and Amazon markets only
 		defaultFilter.putIntArray(AiromoSDKConnector.FILTER_STORES, new int[] { SoftwareMarkets.GooglePlay.ordinal() });

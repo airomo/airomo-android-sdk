@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <string name="airm_app_name">Appcurl from Airomo Inc.</string>
     
@@ -70,6 +70,7 @@
 	<string name="airm_market_google_play">Google Play</string>    
 	<string name="airm_market_amazon">Amazon Store</string>    
     <string name="airm_market_nook">Barnes&amp;Noble</string>
+    <string name="airm_market_wandoujia">Wandoujia</string>
     
     
     

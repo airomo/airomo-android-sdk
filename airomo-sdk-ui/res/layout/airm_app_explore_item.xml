@@ -3,7 +3,7 @@
     android:layout_width="@dimen/airm_app_explore_item_width"
     android:layout_height="match_parent" >
     
-    <RelativeLayout 
+   <RelativeLayout 
         android:id="@+id/airm_layoutAppDetails"
         android:layout_width="match_parent"
     	android:layout_height="@dimen/airm_tile_details_height"
@@ -17,6 +17,18 @@
     		android:contentDescription="@string/airm_descr_app_icon"            
             />
 
+        <TextView
+            android:id="@+id/airm_textSponsoredLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/airm_label_sponsored"
+            android:padding="1dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/airm_sponsored_label_text" 
+            android:background="@color/airm_sponsored_label_bg"/>
+        
         <TextView
             android:id="@+id/airm_title"
             android:layout_width="wrap_content"
@@ -99,6 +111,7 @@
             android:gravity="center_vertical"
             android:padding="@dimen/airm_small_padding"
             android:textAppearance="?android:attr/textAppearanceSmall" />
+
         
     </RelativeLayout>
     

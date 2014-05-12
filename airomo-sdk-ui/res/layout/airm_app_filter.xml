@@ -62,6 +62,14 @@
 				        android:text="@string/airm_market_nook"
 				        style="@style/airm_Filter.Button.Norm"
                         />
+
+                    <Button 
+                        android:id="@+id/btnMarketWandoujia"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/airm_market_wandoujia"
+				        style="@style/airm_Filter.Button.Norm"
+                        />
                     
                 </TableRow>                
             </TableLayout>            
